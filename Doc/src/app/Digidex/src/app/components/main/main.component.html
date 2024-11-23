@@ -1,0 +1,35 @@
+<div class="main-page">
+    
+    <header>
+        <div class="container-links">
+            <div class="logo"></div>
+            <button class="home"></button>
+        </div>  
+        <div class="search">.
+            <input [(ngModel)] = "digimonName" type="text">
+            <div class="fds"></div>
+            <button (click)="searchDigimon()"></button>
+        </div>
+    </header>  
+    <div class="fds"></div>
+    <main>
+        <div class="show">
+
+            <h1> Nome: {{ digimonData?.name | uppercase}} </h1>
+
+            <h2> Atributos: {{ digimonData?.attributes[0].attribute }}</h2>
+
+            <h2> Tipos: {{ digimonData?.types[0].type }} </h2>
+        </div>
+        <div class="moldura">
+            <div class="white">
+                <img [src]="digimonData?.images[0].href" >
+            </div>
+        </div>
+    </main>
+</div>
+
+
+
+
+
