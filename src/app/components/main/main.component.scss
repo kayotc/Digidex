@@ -1,0 +1,164 @@
+.main-page{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    .background{
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        background-image: url("/images/background.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(4px);
+    }
+
+    header{
+        position: relative;
+        height: 25%;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        .container-links{
+            height: 100%;
+            width: 25%;
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-around;
+        
+            .logo{
+                height: 130px;
+                width: 160px;
+                background-image: url('/images/logo.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            
+            button{
+                border: solid 2px #ec6c04;
+                border-radius: 7px;
+                box-shadow: 0px 2px 8px 4px #2020208e;
+                padding: 25px;
+                background: none;
+                transition: .7s;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 60%;
+        
+                &:hover{
+                    border-radius: 45%;
+                    transform: scale(1.15);
+                }
+            }
+            .team{
+                background-color: #e9700cc0;
+                background-image: url('/images/team.png');  
+            }
+        }
+
+        .search{
+            position: relative;
+            height: 90%;
+            width: 70%;
+            right: 0;
+            bottom: 0;
+            align-items: center;
+            justify-content: center;
+            display: inline-flex;
+
+            input{
+                color: #524975;
+                padding: 15px;
+                width: 75%;
+                border: none;
+                border-radius: 7px 0 0 7px;
+                background: #ffffffce;
+
+                &:hover{
+                    background-color: #fff;
+                }
+            }
+
+            
+
+            button{
+                height: 45px;
+                width: 45px;
+                background: #ffffffce;
+                cursor: pointer;
+                border: none;
+                border-radius:  0 7px 7px 0;
+                background-image: url('/images/lupa.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 60%;
+                transition: .5s;
+
+                &:hover{
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+
+    main{
+        position: relative;
+        height: 90%;
+        padding: 0 20px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-around;
+
+        .show{
+            justify-content: center;
+            justify-content: space-around;
+            font-size : 1em;
+            padding: 0 0 0 20px;
+            flex-direction: column;
+            color: aliceblue;
+            display: flex;
+            height: 85%;
+            width: 25%;
+            background-color: #524975d5;
+            border-radius: 12px;
+        }
+
+        .moldura{
+            border-radius: 12px;
+            height: 85%;
+            aspect-ratio: 1;
+            background-color: #524975d5;
+            padding: 25px;
+            transition: .5s;
+            .white{
+                background-color: #fff;
+                border-radius: 5px;
+                height: 100%;
+                width: 100%;
+                padding: 2px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            &:hover{
+                transform: scale(1.04);
+            }
+        }
+
+    }
+}
+
+.fds{
+    height: 25px;
+}

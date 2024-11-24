@@ -1,0 +1,18 @@
+.page{
+    min-height: 100vh;
+    display: flex;
+    color: #fff;
+    flex-direction: column;
+    .background{
+        position: absolute;
+        width: 100vw;
+        min-height: 100vh;
+        background-image: url('/images/background.jpg');
+        background-color: #2020204f;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+        filter: blur(4px);
+    }
+}
