@@ -1,0 +1,168 @@
+.team-page{
+    height: 100vh;
+    width: 100vw;
+    display: inline-flex;
+
+
+    .background{
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        z-index: -1;
+        background-image: url("/images/background.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: blur(4px);
+    }
+
+    .container-links{
+        height: fit-content;
+        width: 25%;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .logo{
+            height: 130px;
+            width: 160px;
+            background-image: url('/images/logo.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        
+        button{
+            border: solid 2px #ec6c04;
+            border-radius: 7px;
+            box-shadow: 0px 2px 8px 4px #2020208e;
+            padding: 25px;
+            background: none;
+            transition: .7s;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70%;
+    
+            &:hover{
+                border-radius: 45%;
+                transform: scale(1.15);
+            }
+        }
+        .home{
+            background-color: #e9700cc0;
+            background-image: url('/images/home.png');
+        }
+    }
+
+    .container-cards{
+        position: relative;
+        height: 100%;
+        width: 70%;
+        
+        .card-two{
+            top: 30px;
+            left: 10px;
+            background: linear-gradient(270deg, #5ebbe0d0, #98d7f0d9 );
+            .photo{
+                background-image: url('/assets/breno.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .card-three{
+            background-color: #d9ae00b9;
+            bottom: 30px;
+            left: 260px;
+            background: linear-gradient(270deg, #d9ae00b9, #e6b904de);
+            .photo{
+                background-image: url('/assets/kayo.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .card-four{
+            top: 30px;
+            left: 510px;
+            background: linear-gradient(150deg, #882d36b9, #a83e49de  );
+            .photo{
+                background-image: url('/assets/marcus.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .card-five{
+            bottom: 30px;
+            left: 760px;
+            background: linear-gradient(75deg, #734126b9,#9b5a38f8) ;
+            .photo{
+                background-image: url('/assets/lucas.jpg');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+
+    .card-one{
+        bottom: 30px;
+        left: 100px;
+        background: linear-gradient(75deg,#f08a16b9,#e07e0eec);
+        .photo{
+            background-image: url('/assets/joão.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+}
+
+.card{
+    padding: 8px 9px 4px 9px;
+    border-radius: 5px;
+    position: absolute;
+    height: 360px;
+    width: 220px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    box-shadow: 0px 2px 8px 4px #2020208e;;
+    transition: .5s;
+    
+    &:hover{
+        transform: scale(1.08);
+    }
+        
+}
+
+.photo{
+    height: 65%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.describe{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fds{
+    height: 20px;
+}
+
+a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}

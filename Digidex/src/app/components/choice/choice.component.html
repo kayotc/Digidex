@@ -1,0 +1,27 @@
+<div class="choice-page">
+    <div class="background"></div>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <div class="container-page">
+        <div class="story">
+            <p>
+                Digimon é uma franquia japonesa que surgiu no final dos anos 1990, conquistando fãs pelo mundo com histórias sobre amizade, coragem e amadurecimento. No centro de tudo estão os Digimons, criaturas digitais que vivem em um universo paralelo chamado Mundo Digital. Em cada série, humanos formam laços com Digimons e enfrentam desafios para proteger ambos os mundos.
+
+A primeira história, Digimon Adventure, acompanha crianças conhecidas como "Digiescolhidos", transportadas para o Mundo Digital durante um acampamento de verão. Com a ajuda de seus parceiros Digimons, elas enfrentam vilões como Devimon, Myotismon e os Mestres das Trevas, descobrindo os "Brasões", símbolos de virtudes como coragem e amor, que ajudam seus Digimons a evoluir. Temas como superação, amizade e trabalho em equipe são centrais nessa aventura.
+
+Digimon Adventure 02 expande o universo com novos Digiescolhidos, como Davis, Yolei e Cody, que enfrentam o Imperador Digimon, um humano que escraviza Digimons. Usando novas formas de evolução, como a Digievolução de Armadura, eles se unem para derrotar ameaças maiores, incluindo o poderoso MaloMyotismon.
+            </p>
+        </div>
+        <div class="buttons">
+            <h1>Preparado para conhecer seu digimon favorito?</h1>
+            <button (click)="Confirmar()" class="choice"></button>
+            <div class="opitions">
+                <button (click) = "goToHome()" *ngIf = "confirme === true" class="home"></button>
+                <button (click) = "goToTeam()" *ngIf = "confirme === true" class="team"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
