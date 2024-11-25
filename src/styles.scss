@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+
+    background-color: #1e1e2f;
+    // background-image: url('/images/background.jpg');
+    // background-color: #2020204f;
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
+button, .logo{
+    cursor: pointer;
+}
