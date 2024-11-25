@@ -1,0 +1,186 @@
+.choice-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+
+  
+    header {
+      position: relative;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  
+      .container-links {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+  
+        .logo {
+            display: flex;
+            align-items: center;
+            width: 190px;
+            aspect-ratio: 2;
+            background-image: url('/images/logo.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            transition: transform ease 0.3s;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+        }
+  
+        .team {
+          width: 30%;
+          aspect-ratio: 1;
+          border: none;
+          border-radius: 50%;
+          background-color: #ec6c04;
+          background-image: url('/images/team.png');
+          background-size: 70%;
+          background-position: center;
+          background-repeat: no-repeat;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+          cursor: pointer;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+          &:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 6px 15px rgba(236, 108, 4, 0.8);
+          }
+        }
+      }
+  
+      .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 70%;
+        margin-left: 2em;
+  
+        input {
+          display: flex;
+          width: 100%;
+          padding: 15px;
+          font-size: 16px;
+          border: none;
+          border-radius: 8px 0 0 8px;
+          background: #ffffffcc;
+          color: #333;
+          outline: none;
+          transition: background-color 0.3s ease;
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+  
+          &:focus {
+            background: #ffffff;
+          }
+        }
+  
+        .choice {
+          width: 50px;
+          height: 50px;
+          border: none;
+          border-radius: 0 8px 8px 0;
+          background: #ffffffcc;
+          background-image: url('/images/lupa.png');
+          background-size: 70%;
+          background-position: center;
+          background-repeat: no-repeat;
+          cursor: pointer;
+          transition: transform 0.3s ease, background-color 0.3s ease;
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+  
+          &:hover {
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+  
+    .container-page {
+        flex: 1;
+        width: 90%;
+        margin: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        background: rgba(82, 73, 117, 0.9);
+        border-radius: 15px;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+  
+      .container-story {
+        flex: 2;
+        padding: 20px;
+  
+        .story {
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+          padding: 15px;
+          line-height: 1.8;
+          font-size: 16px;
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+          color: #e0e0ff;
+          max-height: 750px;
+          overflow-y: scroll !important;
+        }
+      }
+  
+      .details {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+  
+        img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 80%;
+          height: auto;
+          border-radius: 15px;
+          min-height: 100px;
+          box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        }
+  
+        .goToDetails {
+          border: none;
+          border-radius: 50px;
+          padding: 15px 40px;
+          margin-top: 25px;
+          color: #ffffff;
+          font-size: 16px;
+          background: #ec6c04;
+          cursor: pointer;
+          box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+          &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 20px rgba(236, 108, 4, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+@media screen and (max-width: 800px){
+    .choice-page{
+
+        .container-page{
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
